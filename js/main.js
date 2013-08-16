@@ -19,7 +19,7 @@
         errors.push('Form 1 JSON is invalid');
       }
       if (errors.length === 0) {
-        $('.messages').html();
+        $('.messages').html('');
         for (key in form1) {
           value = form1[key];
           meta_obj[key] = {};
@@ -67,7 +67,9 @@
           error = errors[_i];
           html += "<div class='error'>" + error + "</div>";
         }
-        return $('.messages').html(html);
+        $('.messages').html(html);
+        $('#form2_visual').html('');
+        return $('#form1_visual').html('');
       }
     });
   });

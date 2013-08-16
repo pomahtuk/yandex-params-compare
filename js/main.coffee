@@ -19,7 +19,7 @@ $ ->
       errors.push 'Form 1 JSON is invalid'
 
     if errors.length is 0
-      $('.messages').html()
+      $('.messages').html ''
 
       for key, value of form1
         meta_obj[key] = {}
@@ -66,3 +66,5 @@ $ ->
       for error in errors
         html += "<div class='error'>#{error}</div>"
       $('.messages').html html
+      $('#form2_visual').html ''
+      $('#form1_visual').html ''
