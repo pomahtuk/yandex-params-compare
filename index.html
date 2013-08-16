@@ -10,7 +10,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -22,19 +21,30 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header>
+            <h1>Сравнение параметров форм</h1>
+        </header>
+        <div class='actions'>
+            <a href='javascript:void(0);' class='compare button'>Сравнить!</a>
+        </div>
+        <div class='messages'>
+
+        </div>
+        <div class='results'>
+            <section>
+                <h2>Параметры формы 1</h2>
+                <textarea id='form1'>{"route":"product/product","path":"69","product_id":"50","order_id":"12"}</textarea>
+                <div id='form1_visual'>
+            </section>
+            <section>
+                <h2>Параметры формы 1</h2>
+                <textarea id='form2'>{"route":"product/product","path":"59","product_id":"50","customer_id":"50"}</textarea>
+                <div id='form2_visual'>
+            </section>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>
